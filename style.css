@@ -1,0 +1,89 @@
+html, body{
+
+    height: 100%;
+
+    width: 100%;
+
+    margin: 0;
+
+}
+
+.gridcontainer{
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    display: grid;
+
+grid-template-rows: 10% 40% 10% 40%;
+
+grid-template-areas:
+
+"texte1"
+"banniere1"
+"texte2"
+"banniere2"
+
+}
+
+.texte1{
+grid-area: texte1;
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 3em;
+background-color: whitesmoke;
+
+}
+
+.texte2{
+    grid-area: texte2;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3em;
+
+}
+
+@font-face {
+    font-family: "Allo";
+    src: url("18627.ttf");
+}
+
+@font-face {
+    font-family: "BungeeSpice";
+    src: url("MB-Thin_Worms.ttf");
+}
+
+.banniere1{
+    grid-area: banniere1;
+    text-align: center;
+    font-size: 10em;
+font-family: "Allo";
+display: flex;
+justify-content: center;
+align-items: center;
+animation-name: animationbanniere1;
+animation-delay: 2s;
+animation-duration: 2s;
+animation-iteration-count: 10;
+}
+
+.banniere2{
+    grid-area: banniere2;
+    text-align: center;
+    font-size: 8em;
+    background: linear-gradient(white, grey, white);
+    font-family: "BungeeSpice";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animationbanniere1 {
+
+    from {background :linear-gradient(black, red, black) }
+    to{background:linear-gradient(red, rgb(73, 73, 73), red)}
+}
+    
+  
+
+   
+
